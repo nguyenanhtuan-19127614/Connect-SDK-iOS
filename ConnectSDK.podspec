@@ -89,7 +89,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |sp|
     sp.source_files  = "ConnectSDKDefaultPlatforms.h", "core/**/*.{h,m}"
-    sp.exclude_files = (non_arc_files.dup << "core/ConnectSDK*Tests/**/*" << "core/Frameworks/LGCast/**/*.h")
     sp.private_header_files = "core/**/*_Private.h"
     sp.requires_arc = true
 
